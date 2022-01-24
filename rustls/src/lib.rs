@@ -409,8 +409,8 @@ pub mod client {
     #[cfg(feature = "dangerous_configuration")]
     #[cfg_attr(docsrs, doc(cfg(feature = "dangerous_configuration")))]
     pub use crate::verify::{
-        CertificateTransparencyPolicy, HandshakeSignatureValid, ServerCertVerified,
-        ServerCertVerifier, WebPkiVerifier,
+        prepare as verify_prepare, CertificateTransparencyPolicy, HandshakeSignatureValid,
+        ServerCertVerified, ServerCertVerifier, WebPkiVerifier,
     };
     #[cfg(feature = "dangerous_configuration")]
     #[cfg_attr(docsrs, doc(cfg(feature = "dangerous_configuration")))]
