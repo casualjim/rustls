@@ -447,7 +447,7 @@ type CertChainAndRoots<'a, 'b> = (
     Vec<webpki::TrustAnchor<'b>>,
 );
 
-fn prepare<'a, 'b>(
+pub fn prepare<'a, 'b>(
     end_entity: &'a Certificate,
     intermediates: &'a [Certificate],
     roots: &'b RootCertStore,
