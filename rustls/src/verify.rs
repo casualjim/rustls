@@ -447,6 +447,7 @@ type CertChainAndRoots<'a, 'b> = (
     Vec<webpki::TrustAnchor<'b>>,
 );
 
+#[allow(unreachable_pub)]
 pub fn prepare<'a, 'b>(
     end_entity: &'a Certificate,
     intermediates: &'a [Certificate],
